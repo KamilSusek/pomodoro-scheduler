@@ -1,0 +1,16 @@
+.menu {
+  display: flex;
+  min-height: 88vh;
+}
+
+.task__container {
+  margin: 1% 0;
+  padding: 8px;
+  width: 25vw;
+}
+
+.schedules__container {
+  margin: 1% 0;
+  padding: 8px;
+  width: 25vw;
+}

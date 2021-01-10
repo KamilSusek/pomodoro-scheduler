@@ -1,0 +1,7 @@
+{
+    "scheduleTitle": "Learning schedule",
+    "tasks":[{ "taskTitle": "todo0", "taskDescription": "todo", "isCompleted": false },
+             { "taskTitle": "todo1", "taskDescription": "todo", "isCompleted": false },
+             { "taskTitle": "todo2", "taskDescription": "todo", "isCompleted": false },
+             { "taskTitle": "todo3", "taskDescription": "todo", "isCompleted": false }] 
+}
