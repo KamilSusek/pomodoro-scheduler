@@ -1,5 +1,4 @@
 import React from 'react'
-import ClockController from './ClockController'
 import Clock from './Clock'
 import ClockDurationController from './ClockDurationController'
 import { connect } from 'react-redux'
@@ -147,8 +146,7 @@ class ClockContainer extends React.Component<{ task: Task }, ClockState> {
         break
 
       default:
-      case CounterState.SCHEDULE_COUNTER:
-        this.setState(state => ({
+        this.setState((state) => ({
           minutes: this.LEARNING_SCHEDULE_DURATION_IN_MINUTES,
           seconds: 0,
           isStarted: false

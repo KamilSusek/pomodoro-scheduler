@@ -1,7 +1,7 @@
 import React from 'react'
 import { connect } from 'react-redux'
 import { mapDispatchToProps, mapStateToProps } from '../clock/ClockContainer'
-import Task from './TaskItem'
+import TaskItem from './TaskItem'
 
 interface Task {
   completed: boolean
@@ -22,7 +22,7 @@ function TaskList ({ title, tasks, onSet }: TaskListProp) {
         <h1>{title}</h1>
         {tasks.length > 0 &&
           tasks.map((task, index) => (
-            <Task key={index} task={task} handleTaskSetting={onSet} />
+            <TaskItem key={index} task={task} handleTaskSetting={onSet} />
           ))}
       </div>
     )

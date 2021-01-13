@@ -15,7 +15,7 @@ export default class RouteContainer extends Component {
 
   async submit (values: any) {
     try {
-      const response = await axios.post('/schedule/add', values)
+      await axios.post('/schedule/add', values)
     } catch (error) {}
   }
 

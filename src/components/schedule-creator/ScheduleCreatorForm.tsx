@@ -1,6 +1,5 @@
 import React from 'react'
 import { Field, FieldArray, reduxForm } from 'redux-form'
-import InputField from '../field/InputField'
 import './form.css'
 
 const renderField = ({ input, label, type, meta: { touched, error } }: any) => (

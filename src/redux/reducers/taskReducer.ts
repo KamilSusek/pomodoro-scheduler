@@ -1,6 +1,6 @@
 import { SET_TASK } from '../actions/actionsTypes'
 
-export default (state = {}, action: any) => {
+const reducer = (state = {}, action: any) => {
   switch (action.type) {
     case SET_TASK:
       return { ...state, task: action.payload }
@@ -8,3 +8,4 @@ export default (state = {}, action: any) => {
       return state
   }
 }
+export default reducer

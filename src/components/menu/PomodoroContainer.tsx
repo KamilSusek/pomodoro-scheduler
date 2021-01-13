@@ -4,9 +4,7 @@ import TasksContainer from '../task/TasksContainer'
 import './menu.css'
 
 class PomodoroContainer extends Component<{}> {
-  constructor (props: any) {
-    super(props)
-  }
+
 
   componentDidMount () {}
 

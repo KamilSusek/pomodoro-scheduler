@@ -1,6 +1,6 @@
 import { FETCH_SCHEDULES } from '../actions/actionsTypes'
 
-export default (state = [], action: any) => {
+ const reducer = (state = [], action: any) => {
   switch (action.type) {
     case FETCH_SCHEDULES:
       return action.payload
@@ -8,3 +8,4 @@ export default (state = [], action: any) => {
       return state
   }
 }
+export default reducer
