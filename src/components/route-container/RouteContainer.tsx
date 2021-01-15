@@ -4,6 +4,7 @@ import PomodoroContainer from '../menu/PomodoroContainer'
 import ScheduleCreatorForm from '../schedule-creator/ScheduleCreatorForm'
 import ScheduleListContainer from '../schedule-list/ScheduleListContainer'
 import axios from '../../axios/axios'
+import SchedulesManagerContainer from '../schedules-manager/SchedulesManagerContainer'
 
 export default class RouteContainer extends Component {
   constructor (props: any) {
@@ -28,6 +29,11 @@ export default class RouteContainer extends Component {
         <Route path='/create'>
           <div className='content'>
             <ScheduleCreatorForm onSubmit={this.submit} />
+          </div>
+        </Route>
+        <Route path='/manager'>
+          <div className='content'>
+            <SchedulesManagerContainer />
           </div>
         </Route>
         <Route path='/'>

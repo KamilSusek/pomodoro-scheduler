@@ -1,6 +1,7 @@
 import React from 'react'
 import { Schedule } from './Schedule'
 import ScheduleItem from './ScheduleItem'
+import WaitingScreen from './WaitingScreen'
 
 interface ScheduleListProps {
   schedules: Schedule[] | undefined
@@ -14,7 +15,7 @@ function ScheduleList (props: ScheduleListProps) {
           <ScheduleItem key={index} schedule={schedule} />
         ))
       ) : (
-        <div></div>
+        <WaitingScreen />
       )}
     </ul>
   )

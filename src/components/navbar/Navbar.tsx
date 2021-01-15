@@ -7,7 +7,7 @@ function Navbar () {
     <div className='navbar'>
       <Link to='/'>Home</Link>
       <Link to='/create'>Create schedule</Link>
-      <Link to='/create'>Manage schedules</Link>
+      <Link to='/manager'>Manage schedules</Link>
     </div>
   )
 }

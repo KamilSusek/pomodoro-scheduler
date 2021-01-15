@@ -75,7 +75,7 @@ function ScheduleCreatorForm (props: any): JSX.Element {
             disabled={pristine || submitting}
             onClick={reset}
           >
-            Clear Values
+            Clear
           </button>
         </div>
       </form>

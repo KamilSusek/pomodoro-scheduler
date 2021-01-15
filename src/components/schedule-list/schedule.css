@@ -36,7 +36,7 @@ a.primary {
 }
 
 a.primary:hover {
-  transition: all .5s;
+  transition: all 0.5s;
   opacity: 0.7;
   box-shadow: 0px 0px 6px -1px black;
 }
@@ -53,4 +53,25 @@ ul.schedules__container {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+
+div.spinner__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+div.waiting__screen {
+  font-size: 3rem;
+  animation: mymove infinite 2s linear;
+}
+
+@keyframes mymove {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
