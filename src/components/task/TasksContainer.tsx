@@ -38,7 +38,6 @@ class TasksContainer extends Component<
 
   componentDidMount () {
     const { id } = this.props.match.params
-    console.log(id)
     this.fetchTask(id)
   }
 

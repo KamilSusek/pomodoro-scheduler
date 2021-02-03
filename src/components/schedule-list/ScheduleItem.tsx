@@ -12,7 +12,7 @@ function ScheduleItem (props: ScheduleItemProps) {
       <h1>{props.schedule.title}</h1>
       <p>{props.schedule.description}</p>
       <Link to={`/pomodoro/${props.schedule.id}`} className='primary'>
-        View
+        Start
       </Link>
     </li>
   )

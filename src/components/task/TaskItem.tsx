@@ -7,16 +7,18 @@ interface Task {
 }
 
 interface TaskProp {
+  isSelected: boolean
   task: Task
-  handleTaskSetting(task: Task): void
+  setTask(task: Task, index: number): void
+  index: number
 }
 
-function TaskItem ({ task, handleTaskSetting }: TaskProp) {
+function TaskItem ({ isSelected, index, task, setTask }: TaskProp) {
   return (
     <div
-      className='task__item'
+      className={isSelected ? 'selected task__item' : 'task__item'}
       onClick={() => {
-        handleTaskSetting(task)
+        setTask(task, index)
       }}
     >
       {task.title} {task.completed ? <FaRegCheckCircle /> : <FaRegCircle />}

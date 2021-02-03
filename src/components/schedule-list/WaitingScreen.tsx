@@ -8,6 +8,7 @@ function WaitingScreen () {
         <AiOutlineLoading3Quarters />
       </div>
       <h1>Fetching data...</h1>
+      <h1>This may take a while.</h1>
     </div>
   )
 }

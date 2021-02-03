@@ -5,6 +5,7 @@ import ScheduleCreatorForm from '../schedule-creator/ScheduleCreatorForm'
 import ScheduleListContainer from '../schedule-list/ScheduleListContainer'
 import axios from '../../axios/axios'
 import SchedulesManagerContainer from '../schedules-manager/SchedulesManagerContainer'
+import ScheduleEditContainer from '../schedules-manager/schedules-editor/ScheduleEditContainer'
 
 export default class RouteContainer extends Component {
   constructor (props: any) {
@@ -29,6 +30,11 @@ export default class RouteContainer extends Component {
         <Route path='/create'>
           <div className='content'>
             <ScheduleCreatorForm onSubmit={this.submit} />
+          </div>
+        </Route>
+        <Route exact path='/manager/:id'>
+          <div className='content'>
+            <ScheduleEditContainer />
           </div>
         </Route>
         <Route path='/manager'>

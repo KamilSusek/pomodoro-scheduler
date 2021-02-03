@@ -5,12 +5,24 @@ div.schedules__list {
 }
 
 div.icons__box {
+  width: 20%;
+}
+
+.icon {
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
 }
 
 div.icons__box button {
   font-size: 1.4rem;
-
   background-color: white;
+}
+
+div.icons__container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 div.schedules__list_item {
